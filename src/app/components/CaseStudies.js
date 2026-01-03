@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const CaseStudies = () => {
-  const [activeCase, setActiveCase] = useState(3) // Web & Mobile active by default
+  const [activeCase, setActiveCase] = useState(3) 
 
   const caseStudies = [
     {
