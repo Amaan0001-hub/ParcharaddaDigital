@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Header from '../components/Header';
 import Aboutbanner from '../components/Aboutinternal';
+import Footer from '../components/Footer';
+import CTA from '../components/CTA';
 
 const TeamDetails = () => {
   return (
@@ -135,7 +137,10 @@ const TeamDetails = () => {
         </div>
       </div>
     </section>
+    <CTA/>
+    <Footer/>
      </div>
+     
   );
 };
 

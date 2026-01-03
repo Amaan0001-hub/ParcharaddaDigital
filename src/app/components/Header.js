@@ -41,10 +41,7 @@ const Header = () => {
   const navItems = [
     {
       title: 'Home',
-      href: '/',
-      submenu: [
-        { title: 'Home Version 1', href: '/' },
-      ]
+      href: '/' 
     },
     {
       title: 'Pages',
@@ -73,15 +70,15 @@ const Header = () => {
         { title: 'Project Details', href: '/project/project-details' },
       ]
     },
-    {
-      title: 'Blog',
-      href: '/blog',
-      submenu: [
-        { title: 'Blog', href: '/blog' },
-        { title: 'Blog With Sidebar', href: '/blog-sidebar' },
-        { title: 'Blog Details', href: '/blog/blog-details' },
-      ]
-    },
+    // {
+    //   title: 'Blog',
+    //   href: '/blog',
+    //   submenu: [
+    //     { title: 'Blog', href: '/blog' },
+    //     { title: 'Blog With Sidebar', href: '/blog-sidebar' },
+    //     { title: 'Blog Details', href: '/blog/blog-details' },
+    //   ]
+    // },
     { title: 'Contact', href: '/contact' },
   ]
 
