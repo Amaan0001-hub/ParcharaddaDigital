@@ -20,7 +20,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container relative z-10 px-4 pt-20 mx-auto lg:pt-32 pb-0 align-left">
+      <div className="container relative z-10 px-4 pt-20 pb-0 mx-auto lg:pt-32 align-left">
         <div className="mb-12 text-center">
           <img
             src="/img/hero-text.png"
@@ -97,7 +97,7 @@ const Hero = () => {
 
       {/* Marquee Section */}
       <div className="overflow-hidden">
-        <div className="w-full py-5 overflow-hidden bg-white backdrop-blur-sm z-10 border-t border-b border-zinc-900">
+        <div className="z-10 w-full py-5 overflow-hidden bg-white border-t border-b backdrop-blur-sm border-zinc-900">
           <div className="flex space-x-8 animate-marquee whitespace-nowrap">
             {[...Array(8)].map((_, i) => (
               <div key={i} className="flex items-center gap-3 space-x-2">

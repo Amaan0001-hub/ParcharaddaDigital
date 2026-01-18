@@ -50,7 +50,7 @@ const News = () => {
       <div className="container px-4 mx-auto">
         {/* Section Title */}
         <div className="max-w-3xl mx-auto mb-16 text-center">
-          <div className="inline-block px-4 rounded-3xl bg-primary/10 py-2">
+          <div className="inline-block px-4 py-2 rounded-3xl bg-primary/10">
             <span className="font-semibold text-capitalize bg-gredient">
               BLOG & NEWS
             </span>
@@ -66,14 +66,14 @@ const News = () => {
           {newsItems.map((item, index) => (
             <div
               key={item.id}
-              className="overflow-hidden px-3 pt-3 transition-all duration-300 bg-white shadow-lg rounded-2xl group hover:shadow-xl"
+              className="px-3 pt-3 overflow-hidden transition-all duration-300 bg-white shadow-lg rounded-2xl group hover:shadow-xl"
             >
               {/* Image */}
               <div className="overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="object-cover rounded w-full transition-transform duration-500 group-hover:scale-110 animate-img-custom-anim-top"
+                  className="object-cover w-full transition-transform duration-500 rounded group-hover:scale-110 animate-img-custom-anim-top"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 />
               </div>
