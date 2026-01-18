@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <a href="/" className="inline-block mb-6">
-              <img src="/img/white-logo.svg" alt="Digtek" className="h-10" />
+              <img src="/img/PA.png" alt="Digtek" className="w-[150]" />
             </a>
             <p className="mb-6 text-gray-400">
               Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a
@@ -43,7 +43,7 @@ const Footer = () => {
                 <a
                   key={social}
                   href="#"
-                  className="flex border border-white items-center justify-center w-10 h-10 transition-colors bg-transparent rounded hover:bg-primary"
+                  className="flex items-center justify-center w-10 h-10 transition-colors bg-transparent border border-white rounded hover:bg-primary"
                 >
                   <svg
                     className="w-5 h-5"
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-6 text-xl font-bold after-before-foot inline-block text-white relative">
+            <h3 className="relative inline-block mb-6 text-xl font-bold text-white after-before-foot">
               Quick Links
             </h3>
             <ul className="space-y-3">
@@ -96,7 +96,7 @@ const Footer = () => {
 
           {/* Recent Posts */}
           <div>
-            <h3 className="mb-6 text-xl font-bold after-before-foot inline-block text-white relative">
+            <h3 className="relative inline-block mb-6 text-xl font-bold text-white after-before-foot">
               Recent Posts
             </h3>
             <div className="space-y-6">
@@ -125,7 +125,7 @@ const Footer = () => {
 
           {/* Contact & Newsletter */}
           <div>
-            <h3 className="mb-6 text-xl font-bold after-before-foot inline-block text-white relative">
+            <h3 className="relative inline-block mb-6 text-xl font-bold text-white after-before-foot">
               Contact Us
             </h3>
             <div className="space-y-6">
@@ -170,7 +170,7 @@ const Footer = () => {
                     placeholder="Your email address"
                     className="w-full px-4 py-4 text-black bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   />
-                  <button className="absolute right-3 top-2 text-white p-2 rounded bg-primary hover:text-primary hover:bg-white">
+                  <button className="absolute p-2 text-white rounded right-3 top-2 bg-primary hover:text-primary hover:bg-white">
                     <svg
                       className="w-5 h-5"
                       fill="none"
@@ -202,7 +202,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t bg-primary border-gray-800">
+      <div className="border-t border-gray-800 bg-primary">
         <div className="container px-4 py-6 mx-auto">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-gray-200">© All Copyright 2024 by Digtek</p>

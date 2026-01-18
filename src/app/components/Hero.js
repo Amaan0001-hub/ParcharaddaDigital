@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative pt-[50px] overflow-hidden bg-center bg-cover bg-custom">
+    <section className="relative pt-[50px]  bg-center bg-cover bg-custom">
       {/* Background Shapes */}
       <div className="z-10 mike-absoute">
         <img src="/img/mike-shape.png" alt="" className="animate-float-bob-y" />
@@ -20,7 +20,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container relative z-10 px-4 pt-20 mx-auto lg:pt-32 pb-14 align-left">
+      <div className="container relative z-10 px-4 pt-20 pb-0 mx-auto lg:pt-32 align-left">
         <div className="mb-12 text-center">
           <img
             src="/img/hero-text.png"
@@ -34,9 +34,9 @@ const Hero = () => {
           <div className="lg:col-span-1">
             <div className="max-w-2xl">
               <span className="inline-block px-4 py-2 mb-4 font-semibold text-white rounded-full text-l bg-white/20 animate-img-custom-anim-left">
-                 <span>GO </span>
-  <span>FOR </span>
-  <span>ADVERTISING</span>
+                <span>GO </span>
+                <span>FOR </span>
+                <span>ADVERTISING</span>
               </span>
               <h1 className="mb-6 text-5xl font-black text-white capitalize lg:text-8xl animate-img-custom-anim-right">
                 THINK DIGITAL
@@ -96,16 +96,30 @@ const Hero = () => {
       </div>
 
       {/* Marquee Section */}
-      <div className="lg:absolute bottom-[0px] w-full py-5 overflow-hidden bg-white backdrop-blur-sm z-10 border-t border-b border-zinc-900">
-        <div className="flex space-x-8 animate-marquee whitespace-nowrap">
-          {[...Array(8)].map((_, i) => (
-            <div key={i} className="flex items-center gap-3 space-x-2">
-              <span className="text-2xl font-extrabold text-zinc-900">
-                THE BEST SOLUTION
-              </span>
-              <img src="/img/star.png" alt="Star" className="h-6" />
-            </div>
-          ))}
+      <div className="overflow-hidden">
+        <div className="z-10 w-full py-5 overflow-hidden bg-white border-t border-b backdrop-blur-sm border-zinc-900">
+          <div className="flex space-x-8 animate-marquee whitespace-nowrap">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="flex items-center gap-3 space-x-2">
+                <span className="text-2xl font-extrabold text-zinc-900">
+                  THE BEST SOLUTION
+                </span>
+                <img src="/img/star.png" alt="Star" className="h-6" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="w-full bg-[#c6f806] relative py-5 overflow-hidden backdrop-blur-sm z-10 border-t border-b border-zinc-900">
+          <div className="flex space-x-8 animate-marquee-reverse whitespace-nowrap">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="flex items-center gap-3 space-x-2">
+                <span className="text-2xl font-extrabold text-zinc-900">
+                  THE BEST SOLUTION
+                </span>
+                <img src="/img/star.png" alt="Star" className="h-6" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

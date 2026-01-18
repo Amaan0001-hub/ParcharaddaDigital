@@ -25,7 +25,13 @@
     border-radius: 1rem;
     z-index: -1;
 }
-
+.background-new-service{
+    background-image: url('/img/service-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 .after-before-foot::after {
     content: "";
     z-index: 1;
@@ -99,6 +105,45 @@
     background-color: #f6f3fe;
     top: 60%;
     z-index:-1;
+}
+.testimonial-bg{
+    background-image: url('/img/testimonial-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial-image{
+    position: relative;
+}
+.testimonial-image::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: "";
+    transform: translate(-50%);
+    width: 562px;
+    height: 543px;
+    border-radius: 1000px 1000px 0 0;
+    background-color: #0633470f;
+    z-index: -1;
+}
+.after-before-heading::before {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    width: 63px;
+    height: 2px;
+    content: "";
+    background-color: #6a47ed;
+}
+.after-before-heading::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    content: "";
+    background-color: #6a47ed;
 }
 
 @media (max-width: 768px) {

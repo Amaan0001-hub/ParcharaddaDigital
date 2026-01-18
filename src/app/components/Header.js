@@ -91,7 +91,7 @@ const Header = () => {
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-primary">
                 <div className="flex items-center justify-center w-32 h-10 rounded-lg bg-primary">
-                  <span className="ml-10 font-bold text-white">Parchaaradda</span>
+                  <img src="/img/PA.png" alt="Logo" className="" />
                 </div>
               </Link>
             </div>
