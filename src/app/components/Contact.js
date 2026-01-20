@@ -1,4 +1,61 @@
+"use client";
+
+import { useState } from "react";
+import axios from "axios";
+
 const Contact = () => {
+
+   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill required fields");
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      const res = await axios.post(
+        "https://parcharadda.onrender.com/api/contact",
+        formData
+      );
+
+      if (res.data.success) {
+        alert("Message sent successfully ✅");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong ❌");
+    } finally {
+      setLoading(false);
+    }
+  };
+  
   return (
     <section className="relative overflow-hidden section-padding bg-primary">
       <div className="absolute inset-0">
@@ -10,85 +67,87 @@ const Contact = () => {
         {/* Section Title */}
         <div className="grid items-center gap-8 lg:grid-cols-4">
           <div className="col-span-3">
-            <div className="inline-block px-4 rounded-3xl bg-white/10 py-2">
-              <span className="font-semibold text-capitalize text-white">
+            <div className="inline-block px-4 py-2 rounded-3xl bg-white/10">
+              <span className="font-semibold text-white text-capitalize">
                 Contact Us
               </span>
             </div>
-            <h2 className="mt-4 capitalize mb-6 text-4xl font-extrabold text-white lg:text-5xl">
+            <h2 className="mt-4 mb-6 text-4xl font-extrabold text-white capitalize lg:text-5xl">
               How can we help you today?
             </h2>
           </div>
           <div className="col-span-1">
-            <p className="text-white ps-4 border-l border-white">
+            <p className="text-white border-l border-white ps-4">
               The a long established fact that a reader will be distracted the
               readable content of page when looking at layout the point.
             </p>
           </div>
         </div>
-        
+
 
         <div className="grid gap-12 mt-10 lg:grid-cols-2">
           {/* Contact Form */}
           <div className="p-8 bg-white shadow-2xl rounded-2xl">
             <h3 className="mb-8 text-3xl font-bold">Get in Touch</h3>
 
-            <form className="space-y-6">
+             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border rounded-lg"
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border rounded-lg"
+                />
               </div>
 
               <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <select className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
-                    <option>Subject</option>
-                    <option>Complain</option>
-                    <option>Greetings</option>
-                    <option>About Price</option>
-                    <option>About order</option>
-                  </select>
-                </div>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border rounded-lg"
+                />
+
+                <select
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border rounded-lg"
+                >
+                  <option value="">Select Subject</option>
+                  <option>Complain</option>
+                  <option>Greetings</option>
+                  <option>About Price</option>
+                  <option>About Order</option>
+                </select>
               </div>
 
-              <div>
-                <textarea
-                  placeholder="Messages"
-                  rows="5"
-                  className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                ></textarea>
-              </div>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full px-4 py-3 border rounded-lg"
+              ></textarea>
 
-              <div className="flex items-center gap-3">
-                <input type="checkbox" id="agree" className="w-5 h-5" />
-                <label htmlFor="agree" className="text-gray-600">
-                  Collaboratively formulate principle capital. Progressively
-                  evolve user
-                </label>
-              </div>
-
-              <button type="submit" className="justify-center w-full theme-btn">
-                Submit Now
-                <svg
+               <button type="submit" disabled={loading} className="justify-center w-full theme-btn">
+               
+                {loading ? "Sending..." : "Submit Now"}
+                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
                   stroke="currentColor"
@@ -110,21 +169,22 @@ const Contact = () => {
             {/* Map */}
             <div className="mb-8 overflow-hidden shadow-2xl rounded-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.2053649017717!2d81.9694926!3d27.1371681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999efb932bfa54b%3A0xa726f8c0cc1d8000!2sPrachaar%20Adda!5e0!3m2!1sen!2sin!4v1700000000000"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-2xl"
-              ></iframe>
+              />
             </div>
+
 
             {/* Contact Info */}
             <div className="relative p-8 bg-white shadow-2xl rounded-2xl">
               {/* Decorative Triangles */}
-              
+
 
               <h2 className="mb-8 text-2xl font-bold text-center">
                 Contact Info
@@ -143,8 +203,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">
-                      Gregory Cartwright, 4059 <br />
-                      Carling Avenue, Ugglebarnby
+                      Shop no - UGF 15, Zenith Complex, Circular Road, opposite MSITM, Avas Vikas Colony Phase I, Bharatpuri, Gonda, Uttar Pradesh 271001
                     </h3>
                   </div>
                 </div>
@@ -160,9 +219,9 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold">
-                      <a href="tel:+61086660112" className="hover:text-primary">
-                        +6108-666-0112
+                    <h3 className="mt-2 font-semibold">
+                      <a href="tel:+91 9140449464" className="hover:text-primary">
+                        +91 9140449464
                       </a>
                     </h3>
                   </div>
@@ -179,12 +238,12 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold">
+                    <h3 className="mt-2 font-semibold">
                       <a
-                        href="mailto:info@example.com"
+                        href="f.prachaaradda@gmail.com"
                         className="hover:text-primary"
                       >
-                        info@example.com
+                        f.prachaaradda@gmail.com
                       </a>
                     </h3>
                   </div>
