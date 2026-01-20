@@ -139,10 +139,10 @@ const Footer = () => {
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
                   </svg>
                   <a
-                    href="mailto:info@example.com"
+                    href="f.prachaaradda@gmail.com"
                     className="text-gray-400 hover:text-white"
                   >
-                    info@example.com
+                    f.prachaaradda@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
@@ -157,7 +157,7 @@ const Footer = () => {
                     href="tel:2086660112"
                     className="text-gray-400 hover:text-white"
                   >
-                    +208-666-0112
+                    +91 9140449464
                   </a>
                 </div>
               </div>
@@ -205,7 +205,7 @@ const Footer = () => {
       <div className="border-t border-gray-800 bg-primary">
         <div className="container px-4 py-6 mx-auto">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-gray-200">© All Copyright 2024 by Digtek</p>
+            <p className="text-gray-200">© All Copyright 2026 by Prachaar Adda</p>
             <div className="flex gap-6">
               <a
                 href="#"

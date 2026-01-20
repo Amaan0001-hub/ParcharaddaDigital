@@ -64,3 +64,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   @apply font-bold text-gray-900;
 }
+
+
+/* SMALL CASE CARD TITLE DEFAULT */
+.case-rotate-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+
+/* TITLE ROTATE ONLY ON HOVER */
+.group:hover .case-rotate-title {
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+}
+
+/* CONTENT HIDDEN */
+.case-hover-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+/* CONTENT ONLY FOR ACTIVE CARD */
+.case-open .case-hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}

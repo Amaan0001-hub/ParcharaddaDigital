@@ -16,25 +16,7 @@ const About = () => {
       />
 
       <div className="container px-4 mx-auto">
-        {/* Brands Marquee */}
-        <div className="mb-20">
-          <h4 className="mb-8 text-2xl font-bold text-center">
-            1k + Brands Trust Us
-          </h4>
-          <div className="flex overflow-hidden">
-            <div className="flex justify-center w-full py-4 space-x-12 animate-marquee whitespace-nowrap">
-              {[...brands, ...brands].map((brand, index) => (
-                <div key={index} className="flex-shrink-0">
-                  <img
-                    src={brand}
-                    alt="Brand"
-                    className="w-auto h-16 transition-opacity opacity-70 hover:opacity-100"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Image */}
@@ -45,7 +27,7 @@ const About = () => {
             <img
               src="/img/bg-shape.png"
               alt=""
-              className="absolute w-full bottom-0 -right-6 -z-10"
+              className="absolute bottom-0 w-full -right-6 -z-10"
             />
             <img
               src="/img/grap.png"
@@ -61,12 +43,12 @@ const About = () => {
 
           {/* Right Content */}
           <div className="col-span-1">
-            <div className="inline-block px-4 rounded-3xl bg-primary/10 py-2">
+            <div className="inline-block px-4 py-2 rounded-3xl bg-primary/10">
               <span className="font-semibold text-capitalize bg-gredient">
                 About Us
               </span>
             </div>
-            <h2 className="mt-4 capitalize mb-6 text-4xl font-extrabold text-zinc-950 lg:text-5xl">
+            <h2 className="mt-4 mb-6 text-4xl font-extrabold capitalize text-zinc-950 lg:text-5xl">
               Skills to improve Your Company Brand
             </h2>
 
@@ -78,7 +60,7 @@ const About = () => {
 
             {/* Progress Bars */}
             <div className="grid gap-8 mb-4 md:grid-cols-2">
-              <div className="text-center flex items-center col-span-1">
+              <div className="flex items-center col-span-1 text-center">
                 <div className="relative w-32 h-32 mx-auto mb-4">
                   <svg className="w-full h-full" viewBox="0 0 36 36">
                     <path
@@ -107,7 +89,7 @@ const About = () => {
                 <h6 className="font-semibold">Paid search marketing</h6>
               </div>
 
-              <div className="text-center items-center flex col-span-1">
+              <div className="flex items-center col-span-1 text-center">
                 <div className="relative w-32 h-32 mx-auto mb-4">
                   <svg className="w-full h-full" viewBox="0 0 36 36">
                     <path
@@ -139,7 +121,7 @@ const About = () => {
 
             <a
               href="/about"
-              className="inline-flex font-medium items-center theme-btn"
+              className="inline-flex items-center font-medium theme-btn"
             >
               EXPLORE MORE
               <svg

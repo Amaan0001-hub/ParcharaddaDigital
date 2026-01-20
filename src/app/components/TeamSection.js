@@ -5,11 +5,11 @@ import TeamCard from './TeamCard';
 
 // Team member data
 const teamMembers = [
-  { id: 1, name: "Faraz Ahmad", position: "Founder & CEO", imageSrc: "/assets/img/team/01.jpg" },
-  { id: 3, name: "Pratibha Negi", position: "Creative Visual Head(photography,onsite shoots,anddesign)", imageSrc: "/assets/img/team/03.jpg" },
-  { id: 2, name: "Sayed Fahad Ali", position: "Tech/AI Lead(responsible for automationandAI integration)", imageSrc: "/assets/img/team/02.jpg" },
+  { id: 1, name: "Faraz Ahmad", position: "Founder & CEO", imageSrc: "/img/CEO.png" },
+  { id: 3, name: "Pratibha Negi", position: "Creative Visual Head(photography,onsite shoots,anddesign)", imageSrc: "/img/CO1.png" },
+  { id: 2, name: "Sayed Fahad Ali", position: "Tech/AI Lead(responsible for automationandAI integration)", imageSrc: "/img/CO2.png" },
   
-  { id: 4, name: "Ali Zafar", position: "Head of Content Strategy (since they createposts and manage creative content)", imageSrc: "/assets/img/team/04.jpg" },
+  { id: 4, name: "Ali Zafar", position: "Head of Content Strategy (since they createposts and manage creative content)", imageSrc: "/img/CO3.png" },
   
 ];
 
