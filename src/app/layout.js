@@ -47,7 +47,7 @@ export const metadata = {
     siteName: "Parcharadda",
     images: [
       {
-        url: "https://parcharadda.com/og-image.jpg", // 🔥 public folder image
+        url: "/img/PA.png", // 🔥 public folder image
         width: 1200,
         height: 630,
         alt: "Parcharadda Digital Marketing Agency",
