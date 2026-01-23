@@ -20,13 +20,13 @@ export const teamMembers = [
     name: "Faraz Ahmad",
     position: "Founder & CEO",
     imageSrc: "/img/CEO.png",
-    bio: "Prior to joining company, she spent 20+ years at Inmosys, where he held a wide range of global leadership roles, from services to products, and across operations and sales. Most recently, he was SVP & Global Head of the Manufacturing business. He is also an avid cook and history buff. You can find him dining late at night with the chefs of the hotels where he stays during his travels.",
-    phone: "+91 5698 0 036 420",
+    bio: "I define the company’s vision, mission, and long-term strategy.I lead overall business operations, ensuring sustainable growth and profitability.I make key strategic decisions and guide the leadership team toward shared goals.I represent the company in partnerships, client relationships, and public forums.I foster a strong culture of innovation, accountability, and excellence across the organization.",
+    phone: "+91 9140449464",
     email: "faraz@example.com",
     address: "26 Manor St, Braintree UK",
     social: {
-      instagram: "https://instagram.com/faraz",
-      facebook: "https://facebook.com/faraz",
+      instagram: "https://www.instagram.com/faraz_ahmad_khan_?igsh=MTAzYmUwbWZ3bGM0cQ==",
+      facebook: "https://www.facebook.com/share/1CHjdJB5ES/",
       twitter: "https://twitter.com/faraz",
       linkedin: "https://linkedin.com/in/faraz"
     }
@@ -38,11 +38,11 @@ export const teamMembers = [
     imageSrc: "/img/CO2.png",
     bio: "Fahad is responsible for all automation and AI integration projects. With 10+ years of experience in AI and machine learning, he leads our technical innovation efforts.",
     phone: "+91 9876 543 210",
-    email: "fahad@example.com",
+    email: "fahad261299@gmail.com",
     address: "Tech Park, Bangalore",
     social: {
-      instagram: "https://instagram.com/fahad",
-      facebook: "https://facebook.com/fahad",
+      instagram: "https://www.instagram.com/sayed_fahad_777?igsh=bDMxNjcxaW80NDVn",
+      facebook: "https://www.facebook.com/share/1C4MxN5Fye/",
       twitter: "https://twitter.com/fahad",
       linkedin: "https://linkedin.com/in/fahad"
     }
@@ -52,12 +52,12 @@ export const teamMembers = [
     name: "Pratibha Negi",
     position: "Creative Visual Head (photography, onsite shoots, and design)",
     imageSrc: "/img/CO1.png",
-    bio: "Pratibha heads our creative visual department, managing photography, onsite shoots, and design. She has a keen eye for detail and brings creative visions to life.",
+    bio: "I play a key role in shaping the brand’s creative vision and overall visual identity.I lead all photography initiatives, ensuring high-quality, impactful visuals across platforms.I plan and execute onsite shoots, managing concepts, angles, lighting, and composition.I collaborate closely with design and marketing teams to maintain visual consistency.From ideation to final output, I ensure every visual tells a strong and authentic brand story.",
     phone: "+91 8765 432 109",
     email: "pratibha@example.com",
     address: "Creative Hub, Mumbai",
     social: {
-      instagram: "https://instagram.com/pratibha",
+      instagram: "https://www.instagram.com/pratibhasinghnegi?igsh=M2pwOHdtaXczYXg=",
       facebook: "https://facebook.com/pratibha",
       twitter: "https://twitter.com/pratibha",
       linkedin: "https://linkedin.com/in/pratibha"
@@ -68,12 +68,12 @@ export const teamMembers = [
     name: "Ali Zafar",
     position: "Head of Content Strategy",
     imageSrc: "/img/CO3.png",
-    bio: "Ali manages all content creation and strategy. Since they create posts and manage creative content, he ensures our messaging is consistent and engaging across all platforms.",
-    phone: "+91 7654 321 098",
+    bio: "I define and lead the brand’s overall content vision and direction.I oversee the creation of posts, ensuring they are engaging, relevant, and on-brand.I plan content strategies aligned with marketing goals and audience behavior.I manage creative content across platforms, maintaining consistency in tone and quality.",
+    phone: "+91 91618 80825",
     email: "ali@example.com",
     address: "Content Studio, Delhi",
     social: {
-      instagram: "https://instagram.com/alizafar",
+      instagram: "https://www.instagram.com/uxwithali?igsh=ZmZkNTBobzVobjRz",
       facebook: "https://facebook.com/alizafar",
       twitter: "https://twitter.com/alizafar",
       linkedin: "https://linkedin.com/in/alizafar"

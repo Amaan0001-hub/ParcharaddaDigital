@@ -9,7 +9,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Digtek - Digital Marketing Agency",
+  title: "Parcharadda : Social Media Marketing Agency",
   description:
     "Digital marketing agency providing SEO, social media, and digital advertising services",
 };
@@ -20,4 +20,4 @@ export default function RootLayout({ children }) {
       <body className={plusJakarta.className}>{children}</body>
     </html>
   );
-}
+} 

@@ -167,12 +167,9 @@ const TeamDetailPage = () => {
   const params = useParams();
   const id = params.id; // Change from slug to id
   
-  console.log('Params:', params); // Debugging
-  console.log('ID:', id); // Debugging
   
   // Find team member by ID
   const memberId = id ? parseInt(id) : null;
-  console.log('Parsed ID:', memberId); // Debugging
   
   const member = teamMembers.find(member => member.id === memberId);
   
@@ -203,16 +200,7 @@ const TeamDetailPage = () => {
       
       <section className="py-16 md:py-20 lg:py-24 bg-gray-50">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
-          {/* Back Button */}
-          <div className="mb-8">
-            <Link 
-              href="/team"
-              className="inline-flex items-center px-4 py-2 text-white transition-colors duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
-            >
-              <FaArrowLeft className="mr-2" />
-              Back to Team
-            </Link>
-          </div>
+         
           
           <div className="overflow-hidden bg-white shadow-lg rounded-2xl">
             <div className="flex flex-col lg:flex-row">

@@ -49,7 +49,7 @@ const Header = () => {
       submenu: [
         { title: 'About Us', href: '/about' },
         { title: 'Our Team', href: '/team' },
-        { title: 'Team Details', href: '/team-details' },
+        // { title: 'Team Details', href: '/team-details' },
         { title: 'Pricing', href: '/pricing' },
         { title: 'Faq', href: '/faq' },
       ]
@@ -145,7 +145,7 @@ const Header = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 text-gray-600 lg:hidden"
+                className="p-2 text-white lg:hidden"
               >
                 {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
               </button>

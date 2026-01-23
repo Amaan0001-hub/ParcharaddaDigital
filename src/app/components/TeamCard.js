@@ -124,7 +124,7 @@ const TeamCard = ({ id, name, position, imageSrc }) => {
           <p className="text-sm text-gray-600">{position}</p>
         </div>
         
-        {/* Social Icons Overlay */}
+        {/* Social Icons Overlay
         <div className="absolute z-20 icon-shape top-6 right-6">
           <div className="relative">
             <div className="transition-all duration-300 transform translate-y-4 opacity-0 social-profile group-hover:opacity-100 group-hover:translate-y-0">
@@ -176,7 +176,7 @@ const TeamCard = ({ id, name, position, imageSrc }) => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         
         {/* Gradient Overlay */}
         <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:opacity-100"></div>
