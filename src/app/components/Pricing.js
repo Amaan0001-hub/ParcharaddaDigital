@@ -8,7 +8,7 @@ const Pricing = () => {
   const monthlyPlans = [
     {
       name: 'Premium Plans',
-      price: '$99',
+      price: '18K Rs',
       period: '/ Month',
       features: [
         '100 GB SSD Storage',
@@ -24,7 +24,7 @@ const Pricing = () => {
     },
     {
       name: 'Extended Plan',
-      price: '$149',
+      price: '30K Rs',
       period: '/ Month',
       features: [
         '100 GB SSD Storage',
@@ -95,7 +95,7 @@ const Pricing = () => {
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Left Content */}
           <div>
-            <div className="inline-block px-4 rounded-3xl bg-primary/10 py-2">
+            <div className="inline-block px-4 py-2 rounded-3xl bg-primary/10">
               <span className="font-semibold text-capitalize bg-gredient">
                 OUR PRICNG PLAN
               </span>
@@ -111,7 +111,7 @@ const Pricing = () => {
                 <img src="/img/arrow.png" alt="Arrow" className="" />
               </div>
 
-              <div className="flex items-center bg-white p-1 rounded-full">
+              <div className="flex items-center p-1 bg-white rounded-full">
                 <button
                   onClick={() => setActiveTab("monthly")}
                   className={`px-6 py-3 rounded-full font-semibold transition-all ${
@@ -162,7 +162,7 @@ const Pricing = () => {
                         <h4 className="mb-2 text-xl font-bold text-white">
                           {plan.name}
                         </h4>
-                        <h2 className="text-5xl text-white font-bold">
+                        <h2 className="text-5xl font-bold text-white">
                           {plan.price}
                           <sub className="text-lg font-normal">
                             {plan.period}

@@ -34,7 +34,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">Digital Marketing</a>
+                  <a href="#">Social Media Management</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.
@@ -70,7 +70,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">SEO Analytics</a>
+                  <a href="#">ADS Management</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.
@@ -106,7 +106,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">Social Marketing</a>
+                  <a href="#">Identity Design</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.
@@ -142,7 +142,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">Digital Marketing</a>
+                  <a href="#">Branding</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.
@@ -178,7 +178,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">SEO Analytics</a>
+                  <a href="#">Video Shoot</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.
@@ -214,7 +214,7 @@ export default function ServicesPage() {
               </div>
               <div>
                 <h3 className="mb-4 text-xl font-bold transition-colors group-hover:text-primary">
-                  <a href="#">Social Marketing</a>
+                  <a href="#">Video and Photo Editing</a>
                 </h3>
                 <p className="mb-6 text-gray-600">
                   Lorem dolor amet consectetur read adipiscing any more elit.

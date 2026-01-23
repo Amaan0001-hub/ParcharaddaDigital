@@ -2,19 +2,19 @@ const Services = () => {
   const services = [
     {
       icon: '/img/icon-1.png',
-      title: 'Digital Marketing',
+      title: 'Social Media Management',
       description: 'Lorem dolor amet consectetur read adipiscing any more elit.',
       link: '/service/service-details'
     },
     {
       icon: '/img/icon-2.png',
-      title: 'SEO Analytics',
+      title: 'ADS Management',
       description: 'Lorem dolor amet consectetur read adipiscing any more elit.',
       link: '/service/service-details'
     },
     {
       icon: '/img/icon-3.png',
-      title: 'Social Marketing',
+      title: 'Branding & Identity Design',
       description: 'Lorem dolor amet consectetur read adipiscing any more elit.',
       link: '/service/service-details'
     }
@@ -46,17 +46,17 @@ const Services = () => {
         <div className="mb-16">
           <div className="grid items-center gap-8 lg:grid-cols-4">
             <div className="col-span-3">
-              <div className="inline-block px-4 rounded-3xl bg-primary/10 py-2">
+              <div className="inline-block px-4 py-2 rounded-3xl bg-primary/10">
                 <span className="font-semibold text-capitalize bg-gredient">
                   Why Services Us
                 </span>
               </div>
-              <h2 className="mt-4 capitalize mb-6 text-4xl font-extrabold text-zinc-950 lg:text-5xl">
+              <h2 className="mt-4 mb-6 text-4xl font-extrabold capitalize text-zinc-950 lg:text-5xl">
                 Use SEO to Drive Growth <br /> at Your Business
               </h2>
             </div>
             <div className="col-span-1">
-              <p className="text-gray-600 ps-4 border-l border-primary">
+              <p className="text-gray-600 border-l ps-4 border-primary">
                 Pellentesque ut vehicula sapien <br /> dictumst. Maecenas ante.
               </p>
             </div>
@@ -68,7 +68,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="px-4 py-8 transition-shadow border flex gap-3 duration-300 bg-white shadow rounded-2xl hover:shadow-xl group"
+              className="flex gap-3 px-4 py-8 transition-shadow duration-300 bg-white border shadow rounded-2xl hover:shadow-xl group"
             >
               <div className="mb-6">
                 <img
