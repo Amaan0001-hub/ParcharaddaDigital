@@ -52,7 +52,7 @@ const Services = () => {
                 </span>
               </div>
               <h2 className="mt-4 mb-6 text-4xl font-extrabold capitalize text-zinc-950 lg:text-5xl">
-                Use SEO to Drive Growth <br /> at Your Business
+                Use Social Marketing Agency to Drive Growth <br /> at Your Business
               </h2>
             </div>
             <div className="col-span-1">

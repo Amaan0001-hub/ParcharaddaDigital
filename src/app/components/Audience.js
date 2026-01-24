@@ -6,14 +6,14 @@ const Audience = () => {
           {/* Left Content */}
           <div>
             <span className="sub-title bg-color-3">Success Stories</span>
-            <h2 className="mt-4 mb-8 text-4xl text-white font-bold lg:text-5xl">
-              Organic Audience Driven On Your Websites
+            <h2 className="mt-4 mb-8 text-4xl font-bold text-white lg:text-5xl">
+              Organic Audience Driven On Social Media
             </h2>
 
             {/* Client Review */}
             <img src="/img/trust-logo.png" alt="Client" />
             {/* Client Review */}
-            <div className="flex mt-5 gap-3 items-center">
+            <div className="flex items-center gap-3 mt-5">
               <img
                 src="/img/client.png"
                 alt="Client Avatar"
@@ -46,7 +46,7 @@ const Audience = () => {
           {/* Right Content */}
           <div>
             {/* Main Image */}
-            <div className="relative flex lg:justify-end mb-8 pb-0 pt-10">
+            <div className="relative flex pt-10 pb-0 mb-8 lg:justify-end">
               
               <div className="lg:w-[40%] p-6 text-gray-900 bg-white shadow-lg rounded-xl">
                 <h3 className="mb-2 text-2xl font-bold">Expert Analysis</h3>
@@ -57,10 +57,10 @@ const Audience = () => {
             {/* Stats */}
             <div className="grid gap-8 md:grid-cols-2">
               <div className="p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-                <h2 className="mb-4 text-5xl text-white font-bold">
-                  <span className="count">500</span>+
+                <h2 className="mb-4 text-5xl font-bold text-white">
+                  <span className="count">200</span>+
                 </h2>
-                <h4 className="mb-2 text-xl text-gray-300 font-semibold">
+                <h4 className="mb-2 text-xl font-semibold text-gray-300">
                   Total Project
                 </h4>
                 <p className="text-gray-200">
@@ -69,10 +69,10 @@ const Audience = () => {
               </div>
 
               <div className="p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-                <h2 className="mb-4 text-5xl text-white font-bold">
-                  <span className="count">300</span>M+
+                <h2 className="mb-4 text-5xl font-bold text-white">
+                  <span className="count">10</span>+
                 </h2>
-                <h4 className="mb-2 text-xl text-gray-300 font-semibold">
+                <h4 className="mb-2 text-xl font-semibold text-gray-300">
                   Investment
                 </h4>
                 <p className="text-gray-200">
