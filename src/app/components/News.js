@@ -56,8 +56,8 @@ const News = () => {
             </span>
           </div>
           <h2 className="mt-4 mb-6 text-4xl font-bold lg:text-5xl">
-            Use SEO to Drive Growth <br />
-            at Your Business
+            Use Social Marketing Agency to Drive Growth at Your Business <br />
+           
           </h2>
         </div>
 
